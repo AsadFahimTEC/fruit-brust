@@ -39,53 +39,50 @@
 
     <header>
         <!--navbar started-->
-        <nav class="my-5 mx-5">
-            <div class="bg-[#F85559] rounded-3xl navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul class="text-sm text-[#FFF] font-medium menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <div class="container max-w-screen-2xl mx-auto px-4 md:px-14 lg:px-24">
+        <nav class="navbar md:bg-red-500 lg:bg-red-500 my-12 rounded-full px-2 md:px-4 lg:px-6 py-4 text-white">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                       <li><a>Home</a></li>
                       <li><a>About Us</a></li>
                       <li><a>Shop</a></li>
                       <li><a>All Fruits</a></li>
-                      <div>
-                        <img class="w-8" src="./images/logo.png" alt="">
+                      </ul>
                       </div>
-                      <h3 class="text-4xl font-bold mx-5">Fruit Burst</h3>
-
-                      <div class="form-control">
-                        <input class="rounded-3xl w-25 h-10" type="text" placeholder="search here" class="input input-bordered w-24 md:w-auto" />
-                      </div>
-                    </ul>
-                  </div>
+                      <div class="navbar center">
+                        <div class="flex justify-center items-center gap-2">
+                        <img src="./images/logo.png" alt="">
+                      <h3 class="text-4xl font-bold text-black lg:text-white">Fruit Burst</h3>
+                    </div>
                 </div>
                 <div class="navbar hidden lg:flex">
-                  <ul class="text-sm text-[#FFF] font-medium menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
                     <div>
-                        <img class="w-8" src="./images/logo.png" alt="">
+                      <div class="relative">
+                        <input class="rounded-full lg:w-full px-7 py-3" type="text" placeholder="search here" />
+                        <button class="text-[#121212] absolute top-3 right-4">
+                            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                          </button>
+                        </div>
                       </div>
-                      <h3 class="text-4xl font-bold mx-5">Fruit Burst</h3>
-
-                      <div class="form-control">
-                        
-                        <input class="rounded-3xl w-25 h-10" type="text" placeholder="search here"  class="input input-bordered w-24 md:w-auto" />
-                        
+                    </div>
+                    <div class="flex-none ml-auto text-black lg:hidden">
+                        <button class="btn btn-square btn-ghost">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            class="inline-block w-10 h-10 stroke-current"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"
+                            ></path>
+                          </svg>
+                        </button>
                       </div>
-
-                     
-                  </ul>
-                </div>
-              
-              </div>
-
-        </nav>
+                    </nav>
         <!--banner section started-->
         <section class="font-lato">
             <div class="mx-10 bg-hero-bg bg-no-repeat min-h-[calc(100vh-220px)] ">
@@ -256,7 +253,7 @@
 
                             <!--teams container-->
                             <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center">
-                                
+
                                 <!--team member number one-->
                             <div class="card py-6">
                                 <figure class="">
